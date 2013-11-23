@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" ng-app="aquaApp">
+  <head>
+    <title>Aqua Greens</title>
+
+    <!-- Bootstrap - Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/contrib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/contrib/bootstrap-theme.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom/style.css">
+  </head>
+
+  <body ng-controller="chromeCtrl" class="{{pathClass}}">
+    <!-- Chrome Container -->
+    <div id="main">
+      <!-- Menu Container -->
+      <header class="container">
+        <div id="main-menu" class="row">
+          <div id="main-menu-left" class="main-menu menu col-md-4">
+            <ul class="row">
+              <li class="col-md-12"><a href="/#/products">Products</a></li>
+            </ul>
+          </div>
+          <div id="logo" class="col-md-4">
+            <a href="/"><img src="css/custom/images/agrgb.png" /></a>
+          </div>
+          <div id="main-menu-right" class="main-menu menu col-md-4">
+            <ul class="row">
+              <li class="col-md-12"><a href="/#/services">Services</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!-- View -->
+      <div ng-view class="content container"></div>
+
+      <!-- Footer -->
+      <div class="footer container">
+        <div class="row">
+          <div id="slogan" class="col-md-4">Local, fresh, homegrown!</div>
+          <div id="news-teasers" class="col-md-4">
+            <div class="row">
+              <div class="headline">We've got purple basil!</div>
+              <time class="pull-right" datetime="2014-01-14">Jan, 14 - 2014</time>
+            </div>
+            <div class="row">
+              <div class="headline">We'll be at the Farmer's Market!</div>
+              <time class="pull-right" datetime="2014-02-18">Feb, 18 - 2014</time>
+            </div>
+          </div>
+          <div class="menu col-md-4">
+            <ul class="social-links">
+              <li><a class="facebook" href="http://facebook.com">Facebook</a></li>
+              <li><a class="twitter" href="http://twitter.com">Twitter</a></li>
+            </ul>
+            <br />
+            <br />
+            <ul>
+              <li><a href="mailto:email@example.com">email@example.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Angular JS - CDN -->
+    <script src="//code.angularjs.org/1.2.1/angular.min.js"></script>
+    <script src="//code.angularjs.org/1.2.1/angular-sanitize.min.js"></script>
+    <script src="//code.angularjs.org/1.2.1/angular-route.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/custom/app.js"></script>
+    <script src="js/custom/controllers.js"></script>
+  </body>
+</html>

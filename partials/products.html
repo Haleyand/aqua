@@ -1,0 +1,14 @@
+    <!-- Products Container -->
+    <div class="row">
+      <div ng-repeat="product in products" class="product col-md-6">
+        <h2>
+          {{product.name}}
+        </h2>
+        <div class="img-container">
+          <img class="product-img" src="/images/{{product.imgSrc}}" />
+        </div>
+        <div class="product-desc">
+          {{product.desc}}
+        </div>
+      </div>
+    </div>
